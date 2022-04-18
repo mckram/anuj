@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    border-top:1px solid white; position:fixed;
+    bottom:0;
+    left:0;
+    height: 60px;
+    padding:20px;
+   }
+
+.footer-info{
+    float:left;
+    color:white;
+}
+.social-container{
+    margin:auto;
+    position:relative;
+    float:right;
+    height:100%;
+
+}
+.social{
+    color:black;
+    overflow:hidden;
+    font-size: 10px !important;
+    position:absolute;
+}
+.ico{
+    display: inline;
+   padding:30px;
+}
+.fa{
+    font-size:20px;
+    color:white;
+}

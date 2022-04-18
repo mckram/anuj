@@ -1,0 +1,59 @@
+.educMain {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+}
+.educCont {
+  background-color: white;
+  align-items:center;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.vicCont {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.edImgL {
+    height: 90px;
+    width: 180px;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+  .edImgG{
+    height: 80px;
+    width: 180px;
+    padding-left: 30px;
+  }
+.edImgVi {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+.edTitl {
+  font-size: 30px;
+  font-weight: bold;
+}
+.edSub {
+  font-weight: bold;
+  font-size: 20px;
+}
+.it {
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  padding-left: 30px;
+  border-radius: 30px;
+  background-color:black;
+}

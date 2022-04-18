@@ -1,0 +1,15 @@
+.chroHold{
+    width:100%;
+    height:auto;
+    align-items:center;
+    flex-direction:column;
+    display:flex;
+    padding:20px;
+}
+
+.css-15qp7aj-TimelineContentContainer.horizontal{
+    height:50%;
+}
+.chroHold{
+    min-height:120vh;
+}

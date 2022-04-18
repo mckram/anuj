@@ -1,0 +1,57 @@
+.navi{
+    color:white;
+    font-family: "Monserrat-700", sans-serif;
+    font-size:x-large;
+}
+.navWords{
+    float:right;
+}
+.brand{
+    position:absolute;
+    top:0;
+    left:10px;
+}
+.links{
+    color:white;
+    font-size:25px;
+    padding:20px;
+    text-decoration:none;
+    border:none;
+    font-family: 'Montserrat-700', sans-serif;
+}
+
+.links:focus{
+    outline:0;
+}
+.links:hover{
+    color:white;
+}
+
+@media only screen and (max-width: 700px){
+    .brand{
+        display:none;
+    }
+ 
+}
+
+@media only screen and (max-width: 576px){
+    .brand{
+        display:none;
+    }
+    #responsive-navbar-nav{
+        background-color:#232b78;
+        text-align:center;
+        padding:10px;
+        width:100%;
+    }
+    .container{
+        margin-left:0;
+        margin-right:0;
+        padding-left:0;
+        padding-right:0;
+    }
+ .navbar-toggler{
+     margin:10px;
+ }
+}
+

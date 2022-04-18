@@ -1,0 +1,107 @@
+.pubbiG{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.pubCont {
+  padding:30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items:center;
+  
+}
+.innerpC {
+  margin:auto;
+  position: relative;
+  width: 90%;
+  padding:40px;
+  border-radius:6px
+}
+.inns{
+  background-color: white;
+  border-radius: 6px;
+  border-collapse: separate; 
+  perspective: 1px;
+  margin-bottom:20px;
+  text-align:center;
+  padding:20px;
+
+}
+.pTitl {
+  font-size: 60px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+}
+.pubTitl{
+  margin: auto;
+  font-size: 25px;
+  font-weight:bold;
+  list-style-type: none;
+}
+.pubAuth{
+  margin: auto;
+  font-size: 20px;
+  list-style-type: none;
+}
+.pubInt {
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+  list-style-type: none;
+  }
+  .pubDate{
+    margin: auto;
+    font-size: 20px;
+    list-style-type: none;
+  }
+  .pubCite{
+    margin: auto;
+    font-size: 20px;
+    list-style-type: none;
+  }
+
+.barDiv {
+  position:relative;
+  width: 100%;
+  padding: 30px;
+  float: right;
+  display:flex;
+  flex-direction:column;
+  margin-top:50px;
+}
+
+.titlCit{
+    font-size:40px;
+    color:white;
+    text-align:center;
+}
+
+.mainCont{
+  width:100%;
+  height:auto;
+}
+.tCont{
+    text-align:center;
+    width:80%;
+    height:auto;
+    align-items:center;
+    margin:auto;
+    color:black;
+    border:1px solid white;
+    border-radius:6px;
+    margin-top:30px;
+    padding:20px;
+
+}
+@media only screen and (max-width: 700px){
+ .pTitl{
+   font-size:40px;
+
+ }
+}
+

@@ -1,0 +1,44 @@
+.educMain{
+    height:auto;
+    width:100%;
+    padding:50px;
+}
+.educCont{
+    background-color:white;
+    display:flex;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-radius:6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.edImg{
+    height: 150px;
+    width : auto ;
+    margin-top:20px;
+    padding-left: 30px;
+}
+
+.uniInf{
+    padding:10px;
+    padding-left:50px;
+
+}
+.edTitl{
+    font-size:30px;
+    font-weight: bold;
+}
+.edSub{
+    font-weight:bold;
+    font-size:20px;
+}
+
+@media only screen and (max-width: 700px){
+    .educCont{
+        flex-direction:column;
+        text-align:center;
+    }
+    .uniInf{
+        padding:0;
+    }
+}
+
