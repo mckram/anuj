@@ -3,14 +3,29 @@ import publics from "../../Assets/arts.json";
 import Bars from "./bar";
 import "./publics.css";
 import author from "../../Assets/auth.json";
+import { motion } from "framer-motion";
 
 const Publications = () => {
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 8,
+    },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: [0.61, 1, 0.88, 1],
+      },
+    },
+  }
 
   const int = author.interests
 
   return (
+    <motion.div initial="initial" animate="enter" variants={variants}>
     <div className = 'pubBig' id="publicId">
-      <div className="pTitl">PUBLICATIONS</div>
       <div className="pubCont">
         <div className="innerpC">
           {publics.map((keyName, i) => (
@@ -34,10 +49,10 @@ const Publications = () => {
       </div>
       <div className = 'mainCont'>
             
-            <div className="tCont">
-              <p className="titlCit"> Research Interests </p>
-              <p className="titlCit"> {int.map((k, i)=> (
-                <li className="pubInt" key={i}>
+            <div className="cCont">
+              <p className="cT"> Research Interests </p>
+              <p className="cC"> {int.map((k, i)=> (
+                <li className="cI" key={i}>
                 {k}
               </li>
               ))}</p>
@@ -47,6 +62,7 @@ const Publications = () => {
           </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 

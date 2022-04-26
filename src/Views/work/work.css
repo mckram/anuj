@@ -1,7 +1,8 @@
-.educMain {
+.workMain {
   height: auto;
   width: 100%;
   padding: 50px;
+  padding-bottom:100px;
 }
 .educCont {
   background-color: white;
@@ -25,13 +26,13 @@
 }
 
 .edImgL {
-    height: 90px;
+    height: 80px;
     width: 180px;
     margin-top: 20px;
     padding-left: 30px;
   }
   .edImgG{
-    height: 80px;
+    height: 70px;
     width: 180px;
     padding-left: 30px;
   }
@@ -57,3 +58,10 @@
   border-radius: 30px;
   background-color:black;
 }
+@media only screen and (max-width: 700px){
+    .edImgG, .edImgL, .edImgVi{
+      padding-left:0;
+   
+    }
+   }
+   

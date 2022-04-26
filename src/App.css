@@ -3,22 +3,16 @@
 html, body, .App{
   height: 100%;
   font-family: 'Montserrat-700', sans-serif;
+  color: #2b2b3b;
 }
 
+.pTitl{
+  margin-top:50px;
+  text-align:center;
+  font-size:40px;
+  color: #2b2b3b;
+}
 .App {
-    background: linear-gradient(300deg,#3241ed,#4b539d,#7b9be1,#a8beed);
-    background-size: 240% 240%;
-    animation: gradient-animation 24s ease infinite;
+  background-color:#fbfbfd;
   }
   
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }

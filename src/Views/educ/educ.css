@@ -2,9 +2,11 @@
     height:auto;
     width:100%;
     padding:50px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 .educCont{
-    background-color:white;
+    background-color:#eff3f8;
     display:flex;
     margin-top:30px;
     margin-bottom:30px;
@@ -39,6 +41,12 @@
     }
     .uniInf{
         padding:0;
+    }
+    .edImg{
+        padding-left:0;
+    }
+    .edImgVi{
+        padding-left:0;
     }
 }
 

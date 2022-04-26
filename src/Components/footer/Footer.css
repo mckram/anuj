@@ -1,15 +1,15 @@
 .footer {
     width: 100%;
-    border-top:1px solid white; position:fixed;
+    border-top:1px solid #1d2679 ; position:fixed;
     bottom:0;
     left:0;
-    height: 60px;
     padding:20px;
    }
 
 .footer-info{
     float:left;
-    color:white;
+    color:#183e73;
+    font-size:15px;
 }
 .social-container{
     margin:auto;
@@ -17,6 +17,9 @@
     float:right;
     height:100%;
 
+}
+.mck{
+    margin-right:10px;
 }
 .social{
     color:black;
@@ -30,5 +33,21 @@
 }
 .fa{
     font-size:20px;
-    color:white;
+    color:black
+}
+@media only screen and (max-width: 576px){
+ .footer-info{
+     display:none;
+ }
+ .social-container{
+     float:none;
+     width:100%;
+     margin:0;
+ }
+ .icons{
+     width:100%;
+     justify-content:space-between;
+ }
+
+
 }

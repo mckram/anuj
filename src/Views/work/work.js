@@ -3,11 +3,27 @@ import "./work.css";
 import lsn from "../../Assets/ls.png";
 import genome from "../../Assets/genome.png";
 import uvic from "../../Assets/uvic.png";
+import { motion } from "framer-motion";
 
 const Education = () => {
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 8,
+    },
+    enter: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: [0.61, 1, 0.88, 1],
+      },
+    },
+  }
   return (
-    <div id="workId" className="educMain">
-           <div className="pTitl">WORK EXPERIENCE</div>
+    <motion.div initial="initial" animate="enter" variants={variants}>
+    <div id="workId" className="workMain">
+      <div className="pTitl">Work Experience</div>
       <div className="educCont">
         <img className="edImgL" src={lsn} alt="lsn" />
         <div className="uniInf">
@@ -15,11 +31,12 @@ const Education = () => {
           <p className="edSub">Laboratory Supply Network</p>
           <p>Dec 2021 - Present</p>
           <p>
-            Facilitate product sales through direct communication with clients.
-            Responsiblities include providing product information, and
-            organizing and managing the flow of goods throughout the supply
-            chain. Create excellent client experiences, and generate significant
-            sales through the promotion and maintenance of client relations. 
+            Acted as a product specialist responsible for facilitating sales
+            through direct communication with clients. Responsiblities included
+            providing product information, and organizing and managing the flow
+            of goods throughout the supply chain. Created excellent client
+            experiences, and generated significant sales through the promotion
+            and maintenance of client relations.
           </p>
         </div>
       </div>
@@ -31,10 +48,26 @@ const Education = () => {
           <p>Jan 2021 - Dec 2021</p>
           <p>
             Directed and published research on microbial identification using
-            MALDI-TOF mass spectrometry, an emerging technology for microbial identification and diagnosis.
+            MALDI-TOF mass spectrometry, an emerging technology for microbial
+            identification and diagnosis.
           </p>
         </div>
       </div>
+      <div className="educCont">
+        <img className="edImgVi" src={uvic} alt="kmc" />
+        <div className="uniInf">
+          <p className="edTitl">Teaching Assistant</p>
+          <p className="edSub">University of Victoria</p>
+          <p>Sep 2016 - Dec 2020</p>
+          <p>
+            Taught AP CHEM (General), CHEM 101 (General), CHEM 232 (Organic),
+            CHEM 222 (Inorganic), CHEM 260 (Organic), CHEM 362 (Inorganic).
+            Gained experience with leadership, effective communication, and
+            helped to promote an equitable and inclusive learning environment.
+          </p>
+        </div>
+      </div>
+      <div className="pTitl">Volunteering Experience</div>
       <div className="educCont">
         <img className="edImgVi" src={uvic} alt="kmc" />
         <div className="uniInf">
@@ -57,7 +90,8 @@ const Education = () => {
           <p>
             Acted as a volunteer to ensure effective evacuations and to promote
             building safety. Responsibilities included directing building
-            occupants towards the Emergency Assembly Point, and organizing building-wide practice drills.
+            occupants towards the Emergency Assembly Point, and organizing
+            building-wide practice drills.
           </p>
         </div>
       </div>
@@ -65,7 +99,7 @@ const Education = () => {
         <img className="edImgVi" src={uvic} alt="kmc" />
         <div className="uniInf">
           <p className="edTitl">
-            Member - Chemistry Student Advisory Committeet
+            Member - Chemistry Student Advisory Committee
           </p>
           <p className="edSub">University of Victoria</p>
           <p>Oct 2020 - Dec 2021</p>
@@ -80,35 +114,8 @@ const Education = () => {
           </p>
         </div>
       </div>
-      <div className="educCont">
-        <img className="edImgVi" src={uvic} alt="kmc" />
-        <div className="uniInf">
-          <p className="edTitl">Teaching Assistant</p>
-          <p className="edSub">University of Victoria</p>
-          <p>Sep 2016 - Dec 2020</p>
-          <p>
-            Taught AP CHEM (General), CHEM 101 (General), CHEM 232 (Organic),
-            CHEM 222 (Inorganic), CHEM 260 (Organic), CHEM 362 (Inorganic).
-            Gained experience with leadership, effective communication, and
-            helped to promote an equitable and inclusive learning environment.
-          </p>
-        </div>
-      </div>
-      <div className="educCont">
-        <img className="edImgVi" src={uvic} alt="kmc" />
-        <div className="uniInf">
-          <p className="edTitl">Graduate Student</p>
-          <p className="edSub">University of Victoria</p>
-          <p>Sep 2016 - Dec 2020</p>
-          <p>
-            PhD graduate from the McIndoe group. My research focused on
-            investigating Methylalumoxane (MAO), which is widely used in
-            industry and research labs as a co-catalyst for olefin
-            polymerization.
-          </p>
-        </div>
-      </div>
     </div>
+    </motion.div>
   );
 };
 

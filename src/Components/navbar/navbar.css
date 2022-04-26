@@ -1,7 +1,8 @@
 .navi{
     color:white;
     font-family: "Monserrat-700", sans-serif;
-    font-size:x-large;
+    font-size:40px;
+    height:100px;
 }
 .navWords{
     float:right;
@@ -11,47 +12,45 @@
     top:0;
     left:10px;
 }
-.links{
-    color:white;
+
+.LinksA{
     font-size:25px;
-    padding:20px;
+    padding:30px;
     text-decoration:none;
-    border:none;
-    font-family: 'Montserrat-700', sans-serif;
+}
+.Links{
+    font-size:25px;
+    padding:30px;
+    text-decoration: underline 0.15em;
+
 }
 
-.links:focus{
-    outline:0;
-}
-.links:hover{
-    color:white;
-}
 
-@media only screen and (max-width: 700px){
-    .brand{
-        display:none;
-    }
- 
-}
 
-@media only screen and (max-width: 576px){
-    .brand{
-        display:none;
-    }
-    #responsive-navbar-nav{
-        background-color:#232b78;
+@media (max-width: 800px) {
+    .navi{
+        flex-direction: column;
+        background-color: white;
         text-align:center;
-        padding:10px;
-        width:100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: auto;
+        width: 200px;
+        padding-top: 4.5rem;
+        margin:auto;
+        padding-right:30px;
+        border-radius:6px;
+
     }
-    .container{
-        margin-left:0;
-        margin-right:0;
-        padding-left:0;
-        padding-right:0;
-    }
- .navbar-toggler{
-     margin:10px;
- }
+
+.LinksA{
+color:white !important;
+}
+.Links{
+color:white !important;
+
 }
 
+
+  }

@@ -1,27 +1,44 @@
 .hmPage{
-    height:100vh;
+    height:180vh;
     width:100%;
     display:flex;
+    background-image: url('../../Assets/1.svg');
+    background-repeat: no-repeat;
+    padding-bottom:100px;
+    padding-top:50px;
 }
 .hmText{
+    padding-top:220px;
+    display:flex;
+    flex-direction:column;
+    align-items: right;
+    color:#183e73;
+    width:50%;
+    float:left;
+    margin-left:50px;
+}
+
+.socials{
     height:100%;
     display:flex;
     flex-direction:column;
     align-items: right;
     justify-content: center;
-    color:white;
+    color:#183e73;
     width:50%;
     float:left;
     margin-left:50px;
 }
 .hmTitle{
+    margin-bottom:30px;
     font-family: 'Montserrat-700', sans-serif;
     font-size:70px;
-    color:white;
+    color:#2b2b3b;
 }
 .hmPar{
     font-size:35px;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom:40px;
 
 }
 .hmPic{
@@ -33,14 +50,48 @@
 
 }
 .aj{
-    margin:auto;
+    margin:auto;   margin-top:40px;
+    margin-left:100px;
     max-width:100%;
-    height:500px;
+    height:550px;
     border-radius: 50%;
     position:relative;
 
 }
 
+.i{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    list-style:none;
+    align-items:center;
+}
+
+
+.fas{
+    height:20px;
+    width:auto;
+    list-style:none;
+
+}
+.fas:hover{
+    color:black;
+    opacity: .5;
+}
+.button{
+    margin-top:40px;
+    background-color:transparent;
+    color:#183e73;
+    border:1px solid #232b79;
+    width:130px;
+    height:60px;
+    font-size:20px;
+
+}
+.button:hover{
+    background-color:#232b79;
+
+}
 @media only screen and (max-width: 700px){
     .hmPage{
         flex-direction:column;
@@ -64,6 +115,7 @@
         height:auto;
         width:100%;
         padding:20px;
+        margin:auto;
     }
 
     .hmTitle{
@@ -74,6 +126,15 @@
         font-size:30px;
         font-family: 'Montserrat', sans-serif;
     
+    }
+    .i{
+    margin:auto;
+        width:100%;
+        padding:40px;
+    }
+    .button{
+        margin:auto;
+        margin-top:20px;
     }
 }
 

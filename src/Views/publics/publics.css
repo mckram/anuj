@@ -1,8 +1,8 @@
-.pubbiG{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width:100%;
+.pubBig{
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  padding-top:100px;
 }
 
 .pubCont {
@@ -22,6 +22,7 @@
 }
 .inns{
   background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 6px;
   border-collapse: separate; 
   perspective: 1px;
@@ -29,13 +30,6 @@
   text-align:center;
   padding:20px;
 
-}
-.pTitl {
-  font-size: 60px;
-  width: 100%;
-  color: white;
-  text-align: center;
-  list-style-type: none;
 }
 .pubTitl{
   margin: auto;
@@ -68,16 +62,15 @@
 .barDiv {
   position:relative;
   width: 100%;
-  padding: 30px;
+  padding-bottom: 100px;
   float: right;
   display:flex;
   flex-direction:column;
-  margin-top:50px;
 }
 
 .titlCit{
-    font-size:40px;
-    color:white;
+    font-size:60px;
+    color:#2b2b3b;
     text-align:center;
 }
 
@@ -85,23 +78,73 @@
   width:100%;
   height:auto;
 }
-.tCont{
+.cCont{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     text-align:center;
-    width:80%;
+    width:60%;
     height:auto;
     align-items:center;
     margin:auto;
     color:black;
-    border:1px solid white;
     border-radius:6px;
     margin-top:30px;
     padding:20px;
+    display:flex;
 
+}
+
+.cT{
+  width:40%;
+  font-size:70px;
+  color:#2b2b3b;
+  text-align:left;
+}
+.cC{
+  float:right;
+  width:100%;
+  padding-left:15px;
+  margin-left:100px;
+  text-align:left;
+  border-left: 2px solid #2b2b3b;
+}
+
+.cI{
+  text-align:left;
+  list-style-type: none;
+  font-size:30px;
+  color:#232b78;
+  padding-bottom:10px;
 }
 @media only screen and (max-width: 700px){
  .pTitl{
    font-size:40px;
+   text-align:center;
 
+ }
+ .inns{
+   padding:10px;
+ }
+ .innerpC{
+   padding:0;
+ }
+ .cCont{
+   flex-direction:column;
+   width:80%;
+ }
+ .cT{
+   width:100%;
+   text-align:center;
+   border:none;
+
+ }
+ .cC{
+   width:100%;
+   margin:0;
+   border:none;
+
+ }
+ .cI{
+   text-align:center;
  }
 }
 
